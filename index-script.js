@@ -83,7 +83,7 @@ function selectPage(toPage){
         document.getElementById(selectedPage + "Btn").classList.remove("selected");
     }
     // Updates Url without reloading
-    window.history.pushState("","", "?" + goPage);
+    window.history.replaceState("","", "?" + goPage);
     document.getElementById(goPage + "Btn").classList.add("selected");
     // Starts animation
     selectedPage = goPage;
@@ -213,6 +213,9 @@ function fadeDiscOverlay(isFadingIn){
     const animDur = 1000;
     if(isFadingIn){
         discState = "in";
+        // Manually set it here because causes flicker otherwise
+        overlayBack.style.opacity = 0;
+        overlayDisc.style.opacity = 0;
         fadeAnim = setInterval(fadeIn, 5)
     }
     else{
@@ -250,7 +253,7 @@ function fadeDiscOverlay(isFadingIn){
 
 // Listener for input
 window.addEventListener("keyup", (event) =>{
-    //Checks if event has already been listened to
+    //Checks if event has already been listened
     if(event.defaultPrevented){
         return;
     }
@@ -258,8 +261,11 @@ window.addEventListener("keyup", (event) =>{
         Remove the disc overlay when esc is pressed
         Left and Right arrow keys control content direction
     */
-    if(event.key == "Escape" && discState == "in"){
-        fadeDiscOverlay(false);
+    if(discState == "in"){
+        // nested if-statemen to ensure arrows don't work when overlay is active
+        if(event.key == "Escape"){
+            fadeDiscOverlay(false);
+        }
     }else if(event.key == "ArrowLeft"){
         selectPage(false);
     }else if(event.key == "ArrowRight"){
