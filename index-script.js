@@ -117,6 +117,11 @@ function updateContentBackground(id){
     document.getElementById("contentBackground").style.height = "calc(" + window.getComputedStyle(document.getElementById(id)).getPropertyValue('height') + " + 5em)";   
 }
 
+// Updates background size anytime page changes size (i.e. zoom in or out)
+window.addEventListener("resize", (event) => { 
+    updateContentBackground(selectedPage);
+});
+
 // Moves content to be spotlight
 function moveContentIn(id, direction = 1){
     clearInterval(movingContents.get(id)[0]);

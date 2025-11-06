@@ -12,40 +12,6 @@ body{
     background-color: var(--navy);
     overflow-y: scroll; 
 }
-@media screen and (max-width: 1000px) {
-    body{
-        background-color: var(--magenta);
-    }
-    #navBar {
-        visibility: hidden;
-    }
-    #phoneNav{
-        visibility: visible;
-    }
-    #aboutMeImageContainer{
-        margin-left: 5vw;
-        width: 80vw;
-    }
-    .columns{
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-@media screen and (min-width: 1001px) {
-    #phoneNav{
-        visibility: hidden;
-    }
-    #aboutMeImageContainer{
-        margin-left: 4em;
-        width: 10em;
-    }
-    .columns{
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
 
 /* Sticked/Fixed Objects */
 
@@ -123,16 +89,39 @@ body{
 /* Objects */
 #headTitle{
     width: calc(100% - .5em); 
-    height: auto;
+    height: 5em;
     padding: 1em 0 1em 0;
     background-color: var(--navypurple); 
     color: white; 
-    line-height: 2;
     text-align: center; 
-    letter-spacing: 1.5em;
+}
+
+#headTitle h1{
+    display: contents;
+    line-height: 2em;
+    letter-spacing: 1.4em;
     text-transform: uppercase; 
     text-shadow: 0em 0em 0.625em white;
 }
+
+.word{
+    display: contents;
+}
+
+.Titles{
+    position: absolute;
+    width: calc(100% - 1.5em);
+    /* left: 12.5%; */
+    top: 3.5em;
+}
+/* 
+#Title2{
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    top: .5em;
+    left: .5em;
+} */
 
 #contentMargins{
     width: calc(100% - 1.5em);
@@ -324,4 +313,45 @@ body{
 
 .works:hover .worksOverlay{
     opacity: .7;
+}
+
+/* Screen Size Dependencies */
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: var(--navy);
+    }
+    #navBar {
+        visibility: hidden;
+    }
+    #phoneNav{
+        visibility: visible;
+    }
+    #aboutMeImageContainer{
+        display: none;
+        /* margin-left: 5vw;
+        width: 80vw; */
+    }
+    .columns{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .blockContents {
+        margin-top: max(initial, 100vw);
+        /* margin-top: initial; */
+    }
+}
+@media screen and (min-width: 1001px) {
+    #phoneNav{
+        visibility: hidden;
+    }
+    #aboutMeImageContainer{
+        margin-left: 4em;
+        width: 10em;
+    }
+    .columns{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
