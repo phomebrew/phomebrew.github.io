@@ -1,6 +1,6 @@
 :root{
     /* Color Pallete */
-    --magenta: #D4ADFC;
+    --magenta: #bf9ce4;
     --purple: #5C469C;
     --navy: #1D267D;
     --navypurple: #0C134F;
@@ -99,9 +99,23 @@ body{
 #headTitle h1{
     display: contents;
     line-height: 2em;
-    letter-spacing: 1.4em;
+    letter-spacing: 1em;
     text-transform: uppercase; 
     text-shadow: 0em 0em 0.625em white;
+}
+#homeTitle {
+    text-align: center !important;
+}
+
+#Title1{
+    display: block;
+}
+
+#Title2{
+    display: none;
+}
+#Title3{
+    display: none;
 }
 
 .word{
@@ -114,14 +128,6 @@ body{
     /* left: 12.5%; */
     top: 3.5em;
 }
-/* 
-#Title2{
-    position: absolute;
-    width: 75%;
-    text-align: center;
-    top: .5em;
-    left: .5em;
-} */
 
 #contentMargins{
     width: calc(100% - 1.5em);
@@ -139,20 +145,26 @@ body{
     text-align: center;
     background-color: var(--purple);
 }
-.blockContents{
+.section{
     position: absolute;
     height: auto;
     display: none;
     left: -200%;
     width: 95%;
     margin-left: 2.5%;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: var(--magenta);
+    /* margin-top: 1.5em; */
+    /* margin-bottom: 2.5em; */
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
+    /* background-color: var(--magenta); */
     color: white;
     display: block;
+}
+.contentBlock{
+    margin-top: 1.5em;
+    padding-top: 0.05em;
+    padding-bottom: 2em;
+    background-color: var(--magenta);
 }
 
 #contentBackground h1{
@@ -167,6 +179,7 @@ body{
     margin: 0em;
 }
 #aboutMeImageContainer{
+    margin-top: 2em;
     float: left;
     position: relative;
     aspect-ratio: 1 / 1;
@@ -197,6 +210,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: hotpink;
+    font-size: 1.5em;
+}
+#introText{
+    text-align: justify !important;
+    font-size: 1.25em;
 }
 
 #discOverlay{
@@ -300,7 +318,7 @@ body{
 
 /* Actions */
 #aboutMeImageContainer:hover #aboutMeImageOverlay{
-    opacity: .3;
+    opacity: .35;
 }
 #aboutMeImageContainer:hover #aboutMeImage{
     transition-delay: .1s;
@@ -346,7 +364,8 @@ body{
         visibility: hidden;
     }
     #aboutMeImageContainer{
-        margin-left: 4em;
+        margin-left: 2em;
+        margin-right: 2em;
         width: 10em;
     }
     .columns{

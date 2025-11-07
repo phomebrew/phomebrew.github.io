@@ -114,7 +114,7 @@ function moveHandler(id){
 
 // Sets the new height which is then automatically animated
 function updateContentBackground(id){
-    document.getElementById("contentBackground").style.height = "calc(" + window.getComputedStyle(document.getElementById(id)).getPropertyValue('height') + " + 5em)";   
+    document.getElementById("contentBackground").style.height = "calc(" + window.getComputedStyle(document.getElementById(id)).getPropertyValue('height') + " + 1em)";   
 }
 
 // Updates background size anytime page changes size (i.e. zoom in or out)
