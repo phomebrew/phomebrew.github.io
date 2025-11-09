@@ -12,6 +12,19 @@
             <a id = "worksPageBtn" onclick="selectPage('worksPage');">Works</a>
             <a id = "contactPageBtn" onclick="selectPage('contactPage');">Contacts</a>
         </div>
+        <div id="phoneNav">
+            <!-- <button id="phoneNavLeft" onclick="selectPage(false)"><img src="resources/arrow.svg"></button>
+            <button id="phoneNavRight" onclick="selectPage(true)"><img src="resources/arrow.svg"></button> -->
+            <button style="background-color:#3c3d85;" onclick="selectPage('homePage');">
+                Home
+            </button>
+            <button style="background-color:#4849a3;" onclick="selectPage('worksPage');">
+                Works
+            </button>
+            <button style="background-color: #3c3d85;" onclick="selectPage('contactPage');">
+                Contacts
+            </button>
+        </div>
         <div id="discOverlay">
             <div id="discBackground" onclick="fadeDiscOverlay(false);"></div>
             <div id="discContents">
@@ -53,10 +66,6 @@
         </div>
         <div id="contentMargins">
             <div id="contentBackground">
-                <div id="phoneNav">
-                    <button id="phoneNavLeft" onclick="selectPage(false)"><img src="resources/arrow.svg"></button>
-                    <button id="phoneNavRight" onclick="selectPage(true)"><img src="resources/arrow.svg"></button>
-                </div>
                 <div id="homePage" class="section">
                     <div class="contentBlock">
                         <div style="display: flex !important;">
@@ -188,4 +197,4 @@
             </div>
         </div>
     </body>
-</html>
+    </html>
