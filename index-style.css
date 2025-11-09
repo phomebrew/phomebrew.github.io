@@ -105,6 +105,10 @@ body{
 }
 #homeTitle {
     text-align: center !important;
+    background-color: var(--navypurple);
+    width: 40vw; 
+    display: inline-block; 
+    border-radius: 40%;
 }
 
 #Title1{
@@ -271,6 +275,14 @@ body{
 
 #discAppLinkImg{
     color: white;
+}
+
+#skillTitle {
+    background-color: var(--navypurple); 
+    width: 76vw; 
+    display: inline-block; 
+    border-radius: 40%; 
+    margin-bottom: 0.4em !important;
 }
 
 .skillDisplay{
