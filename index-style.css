@@ -273,6 +273,25 @@ body{
     color: white;
 }
 
+.skillDisplay{
+    background-color: var(--navy);
+    display: inline-block;
+    width: 7.25em;
+    /* min-height: 10em; */
+    margin: .25em;
+    padding: .25em;
+    border-radius: 10%;
+}
+
+.skillDisplay h2{
+    font-size: 1.5em;
+}
+
+.skillIcon{
+    max-width: 5em;
+    margin-top: .5em;
+}
+
 .rows{
     display: flex;
     flex-wrap: wrap;
