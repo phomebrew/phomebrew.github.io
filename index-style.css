@@ -121,7 +121,7 @@ body{
     background-color: var(--navypurple);
     width: 40vw; 
     display: inline-block; 
-    border-radius: 40%;
+    border-radius: 100%;
 }
 
 #Title1{
@@ -294,7 +294,7 @@ body{
     background-color: var(--navypurple); 
     width: 76vw; 
     display: inline-block; 
-    border-radius: 40%; 
+    border-radius: 100%; 
     margin-bottom: 0.4em !important;
 }
 
@@ -302,10 +302,20 @@ body{
     background-color: var(--navy);
     display: inline-block;
     width: 7.25em;
-    /* min-height: 10em; */
     margin: .25em;
     padding: .25em;
+    opacity: 0.95;
     border-radius: 10%;
+    border-style: solid;
+    border-width: 0.25em;
+    border-color: var(--magenta);
+    transition: ease 0.5s;
+}
+
+.skillDisplay:hover {
+    opacity: 1;
+    border-color: white;
+    transition: ease 0.5s;
 }
 
 .skillDisplay h2{
