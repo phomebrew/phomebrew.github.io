@@ -18,7 +18,16 @@ var movingContents = new Map([
     ["Title", "Text", "Link", "LinkImg"]
 */
 var discTexts = new Map([
-    ["website", ["Personal Portfolio", "A portolio website that I coded using html, css, and javascript.", "https://github.com/phomebrew/phomebrew.github.io", "https://phomebrew.github.io"]]
+    ["website", 
+        new Map([
+            ["title","Personal Portfolio"],
+            ["disc", "A portolio website to display all my current and previous work.\nCoded In: HTML, CSS, and JavaScript."],
+            ["github", "https://github.com/phomebrew/phomebrew.github.io"],
+            ["githubDisc", "Github Repo"],
+            ["external", "https://phomebrew.github.io"],
+            ["externalDisc", "Link To Project"]
+        ])
+    ]
 ])
 
 var fadeAnim;
@@ -184,23 +193,44 @@ function setupDiscOverlay(name){
     if(!discTexts.has(name)){
         return; 
     }
+    
     var texts;
     texts = discTexts.get(name);
-    // Sets up the text
-    document.getElementById("discOverlay").style.display = "block";
-    document.getElementById("discTitle").textContent = texts[0];
-    document.getElementById("discText").textContent = texts[1];
-    if(name[2] == null){
-        document.getElementById("discCodeLink").style.display = "none";
-    }else{
-        document.getElementById("discCodeLink").style.display = "inline-block";
-        document.getElementById("discCodeLink").href = texts[2];
+
+    // Sets up the text 
+    if(texts.has("title")) {
+        document.getElementById("discTitle").textContent = texts.get("title");
     }
-    if(name[3] == null){
-        document.getElementById("discAppLink").style.display = "none";
+    if(texts.has("disc")) {
+        document.getElementById("discText").textContent = texts.get("disc");
+    }
+    document.getElementById("discOverlay").style.display = "block";
+
+    // Sets up the URLs 
+    if(texts.has("github")){
+        document.getElementById("discCodeLink").style.display = "inline-block";
+        document.getElementById("discCodeLink").href = texts.get("github");
     }else{
-        document.getElementById("discAppLink").style.display = "inline-block";
-        document.getElementById("discAppLink").href = texts[3];
+        document.getElementById("discCodeLink").style.display = "none";
+    }
+    if(texts.has("githubDisc")) {
+        document.getElementById("discCodeLink").style.display = "block";
+        document.getElementById("discCodeDisc").textContent = texts.get("githubDisc");
+    } else {
+        document.getElementById("discCodeLink").style.display = "none";
+    }
+
+    if(texts.has("external")){
+        document.getElementById("discExternalLink").style.display = "inline-block";
+        document.getElementById("discExternalLink").href = texts.get("external");
+    }else{
+        document.getElementById("discExternalLink").style.display = "none";
+    }
+    if(texts.has("externalDisc")) {
+        document.getElementById("discExternalLink").style.display = "block";
+        document.getElementById("discExternalDisc").textContent = texts.get("externalDisc");
+    } else {
+        document.getElementById("discExternalLink").style.display = "none";
     }
     // Runs animation
     fadeDiscOverlay(true);

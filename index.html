@@ -28,14 +28,22 @@
         <div id="discOverlay">
             <div id="discBackground" onclick="fadeDiscOverlay(false);"></div>
             <div id="discContents">
+                <button id="discExitButton" onclick="fadeDiscOverlay(false);">X</button>
+                <!-- <p style="position: absolute; right:1em; top:-0.5em" onclick="fadeDiscOverlay(false);">X</p> -->
                 <h1 id="discTitle">title</h1>
                 <p id="discText">text about the thing</p>
-                <a id="discCodeLink" href = "https://github.com/phomebrew">
-                    <img id="discCodeLinkImg" src="resources/skill-resources/github-mark-white.svg">
-                </a>
-                <a id="discAppLink" href = "https://github.com/phomebrew">
-                    <img id="discAppLinkImg" src="resources/iframe_icon.svg">
-                </a>
+                <div class="discLink">    
+                    <a id="discCodeLink" href = "" target="_blank">
+                        <img id="discCodeLinkImg" src="resources/skill-resources/github-mark-white.svg">
+                    </a>
+                    <p id="discCodeDisc"></p>
+                </div>
+                <div class="discLink">    
+                    <a id="discExternalLink" href = "" target="_blank">
+                        <img id="discExternalLinkImg" src="resources/iframe_icon.svg">
+                    </a>
+                    <p id="discExternalDisc"></p>
+                </div>
             </div>
         </div>
         <div id="headTitle">
@@ -168,7 +176,9 @@
                         <div class="rows">
                             <div class="columns">
                                 <a class="works" onclick="setupDiscOverlay('website')">
-                                    <img class="worksImage" src="works-thumbnails/website_thumbnail.png">
+                                    <div style="background-color: var(--purple);">
+                                        <img class="worksImage" src="works-thumbnails/website_thumbnail.png">
+                                    </div>
                                     <div class="worksOverlay">
                                         <div class="worksImageText">Website (Click Me!)</div>
                                     </div>

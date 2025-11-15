@@ -251,8 +251,34 @@ body{
     text-align: center;;
 }
 
-#discOverlay p, h1{
-    padding: .5em;
+#discOverlay p{
+    padding: 0em;
+}
+#discOverlay h1{
+    padding: 0.75em;
+}
+
+#discExitButton {
+    position: absolute;
+    font-size: 1em;
+    right: 0.60em;
+    top: 0.6em;
+    width: 1.5em; 
+    height: 1.5em;
+    border-radius: 100%; 
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+    transition: ease 0.3s;
+}
+
+#discExitButton:hover {
+    background-color: white;
+    color:rgb(26, 41, 41);
+    /* border-color: gray; */
+    transition: ease 0.3s;
 }
 
 #discOverlay img{
@@ -270,20 +296,39 @@ body{
     position: absolute;
 }
 
+.discLink{
+    display: inline-block;
+}
+.discLink p{
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
 #discContents{
     position: absolute;
     height: auto;
     width: 80%;
-    height: 60vh;
+    height: 80vh;
     margin-left: 10%;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    padding-top: 1em;
+    margin-top: 8vh;
+    padding-top: 0em;
     padding-bottom: .25em;
     opacity: 0.9;
     overflow: auto;
     color: white;
     background-color: var(--navypurple);
+    border-color: white;
+    border-radius: 1em;
+    border-style: solid
+}
+
+#discContents p{
+    white-space: pre-line;
+    line-height: 2em;
+}
+
+#discContents h1{
+    font-size: 1.8em;
 }
 
 #discAppLinkImg{
@@ -301,6 +346,7 @@ body{
 .skillDisplay{
     background-color: var(--navy);
     display: inline-block;
+    position: relative;
     width: 7.25em;
     margin: .25em;
     padding: .25em;
@@ -335,8 +381,15 @@ body{
 }
 
 .works{
+    padding-top: 1em;
     float:inline-start;
     position:relative;
+}
+
+.contentBlock p{
+    padding: 0em 0em 0em 0em !important;
+    text-align: center;
+    margin: 0em;
 }
 
 .worksImage{
@@ -357,7 +410,6 @@ body{
     width: 100%;
     aspect-ratio: inherit;
     transition: ease 1s;
-
 }
 .worksImageText{
     background-color: rgb(0, 0, 200);
