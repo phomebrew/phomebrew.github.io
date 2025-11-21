@@ -403,7 +403,19 @@ body{
     transition: ease 1s;
     vertical-align: middle;
     width: 100%;
-    /* border-radius: 10% !important; */
+    transform-origin: center center;
+}
+
+.WorksImageContainer{
+    background-color: var(--purple); 
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.DIYImageContainer{
+    background-color: var(--purple); 
+    overflow: hidden;
+    border-radius: 10%;
 }
 
 .worksOverlay{
@@ -504,9 +516,9 @@ body{
         max-width: 100%;
     }
     .columnsDIY{
-        -ms-flex: 31%;
-        flex: 31%;
-        max-width: 31%;
+        -ms-flex: 29%;
+        flex: 29%;
+        max-width: 100%;
     }
     .columnsDIY img{
         aspect-ratio: 2/3;
