@@ -21,7 +21,7 @@ var discTexts = new Map([
     ["website", 
         new Map([
             ["title","Personal Portfolio"],
-            ["disc", "A portolio website to display all my current and previous work.\nCoded In: HTML, CSS, and JavaScript."],
+            ["disc", "A portolio website to display all my current and previous work.\nCoded Using: HTML, CSS, and JavaScript.\n(2024 - Present)"],
             ["github", "https://github.com/phomebrew/phomebrew.github.io"],
             ["githubDisc", "Github Repo"],
             ["external", "https://phomebrew.github.io"],

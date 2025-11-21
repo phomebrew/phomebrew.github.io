@@ -77,7 +77,7 @@
                 <div id="homePage" class="section">
                     <div class="contentBlock">
                         <div style="display: flex !important;">
-                            <div id="aboutMeImageContainer" style="min-width: 15em !important">
+                            <div id="aboutMeImageContainer">
                                 <img  id="aboutMeImage" style="image-rendering: crisp-edges;" src="resources/profile_pic.png">
                                 <div id="aboutMeImageOverlay">
                                     <div id="aboutMeImageText"><b>Hello World</b></div>
@@ -87,7 +87,7 @@
                                 <h1 id="homeTitle">About Me</h1>
                                 <p id="introText">
                                     Hello, nice to meet you! My name is Steven Hsiao. <br>
-                                    I'm currently an undergraduate student studying computer engineering. I like taking hiking and creating small crafts made out of cardboard. 
+                                    I'm currently an undergraduate student studying computer engineering at UC San Diego. I like taking hiking, playing cozy games, and creating small crafts made out of cardboard. 
                                     I'm currently revamping this website to reflect all my new projects, so stay tuned! 🎵 
                                 </p>
                             </div>
@@ -113,6 +113,10 @@
                                 <h2>C</h2>
                             </div>
                             <div class="skillDisplay">
+                                <img src="resources/skill-resources/python-original.svg" class="skillIcon">
+                                <h2>Python</h2>
+                            </div>
+                            <div class="skillDisplay">
                                 <img src="resources/skill-resources/html5-original.svg" class="skillIcon">
                                 <h2>HTML</h2>
                             </div>
@@ -125,22 +129,26 @@
                                 <h2>JavaScript</h2>
                             </div>
                             <div class="skillDisplay">
-                                <img src="resources/skill-resources/python-original.svg" class="skillIcon">
-                                <h2>Python</h2>
-                            </div>
-                            <div class="skillDisplay">
-                                <img src="resources/skill-resources/git-plain.svg" class="skillIcon">
-                                <h2>Git</h2>
+                                <img src="resources/skill-resources/dart-plain.svg" class="skillIcon">
+                                <h2>Dart</h2>
                             </div>
                             <div class="skillDisplay">
                                 <img src="resources/skill-resources/github-mark-white.svg" class="skillIcon" style="width: 20em;">
                                 <h2>GitHub</h2>
                             </div>
                             <div class="skillDisplay">
+                                <img src="resources/skill-resources/git-plain.svg" class="skillIcon">
+                                <h2>Git</h2>
+                            </div>
+                            <div class="skillDisplay">
                                 <div style="height: 5.7em;">
                                     <img src="resources/skill-resources/bullet_logo_2010_7_plain.svg" class="skillIcon" style="padding-top: 1.5em;">
                                 </div>
                                 <h2>PyBullet</h2>
+                            </div>
+                            <div class="skillDisplay">
+                                    <img src="resources/skill-resources/androidstudio-original.svg" class="skillIcon">
+                                <h2 style="font-size: 1.01em; padding-top: 0.77em; padding-bottom: .5em;">Android Studio</h2>
                             </div>
                             <div class="skillDisplay">
                                 <img src="resources/skill-resources/unity-original.svg" class="skillIcon">
@@ -159,8 +167,8 @@
                                 <h2>Flutter</h2>
                             </div>
                             <div class="skillDisplay">
-                                <img src="resources/skill-resources/dart-plain.svg" class="skillIcon">
-                                <h2>Dart</h2>
+                                <img src="resources/skill-resources/firebase-original.svg" class="skillIcon">
+                                <h2>Firebase</h2>
                             </div>
                             <div class="skillDisplay">
                                 <img src="resources/skill-resources/raspberrypi-original.svg" class="skillIcon">
@@ -171,24 +179,63 @@
                 </div>
                 <div id="worksPage" class="section">
                     <div class="contentBlock">
-                        <h1 style="font-size: 2em;">Works</h1>
+                        <h1 style="font-size: 2em;">Personal Coding Projects</h1>
                         <p><b>**Please Click on the Images for More Info**</b></p>
                         <div class="rows">
-                            <div class="columns">
+                            <div class="columnsWorks">
                                 <a class="works" onclick="setupDiscOverlay('website')">
                                     <div style="background-color: var(--purple);">
-                                        <img class="worksImage" src="works-thumbnails/website_thumbnail.png">
+                                        <img class="worksImage" src="resources/thumbnails/works/website_thumbnail.png">
                                     </div>
                                     <div class="worksOverlay">
                                         <div class="worksImageText">Website (Click Me!)</div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="columns">
+                            <div class="columnsWorks">
                             </div>
-                            <div class="columns">
+                            <div class="columnsWorks">
                             </div>
-                            <div class="columns">
+                            <div class="columnsWorks">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentBlock">
+                        <h1 style="font-size: 2em;">Arts And Crafts Projects</h1>
+                        <!-- <p><b>**Please Click on the Images for More Info**</b></p> -->
+                        <div class="rows">
+                            <div class="columnsDIY" style="width: 100%;">
+                                <a class="works" onclick="" style="width: 100%;">
+                                    <div style="background-color: var(--purple); width: 100%;">
+                                        <img class="worksImage" style="height: 100%;"
+                                        src="resources/thumbnails/DIY/Ida.jpg">
+                                    </div>
+                                    <div class="worksOverlay">
+                                        <div class="worksImageText">Ida (Monument Valley)</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="columnsDIY" style="width: 100%;">
+                                <a class="works" onclick="" style="width: 100%;">
+                                    <div style="background-color: var(--purple); width: 100%;">
+                                        <img class="worksImage" style="height: 100%;"
+                                        src="resources/thumbnails/DIY/ChristmasTree.jpg">
+                                    </div>
+                                    <div class="worksOverlay">
+                                        <div class="worksImageText">Christmas Tree</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="columnsDIY" style="width: 100%;">
+                                <a class="works" onclick="" style="width: 100%;">
+                                    <div style="background-color: var(--purple); width: 100%;">
+                                        <img class="worksImage" style="height: 100%;"
+                                        src="resources/thumbnails/DIY/BobaCup.jpg">
+                                    </div>
+                                    <div class="worksOverlay">
+                                        <div class="worksImageText">Boba Cup</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -197,11 +244,16 @@
                     <div class="contentBlock">
                         <h1>Contact Me</h1>
                         <p>Want to contact me or see more of me? Click on the link(s) below!</p>
-                        <div id="contact_links">
-                            <a href = "https://github.com/phomebrew">
-                                <img src="resources/skill-resources/github-mark-white.svg">
-                            </a>
-                        </div>
+                            <div class="contactLinks">
+                                <a href = "https://github.com/phomebrew">
+                                    <img src="resources/skill-resources/github-mark-white.svg">
+                                </a>
+                            </div>
+                            <!-- <div class="contactLinks">
+                                <a href = "https://www.linkedin.com/in/steven-hsiao-7747ba382/">
+                                    <img src="resources/links/LinkedIn_icon.svg">
+                                </a>
+                            </div> -->
                     </div>
                 </div>
             </div>
