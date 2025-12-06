@@ -441,9 +441,20 @@ body{
     transform: translate(-50%, -50%);
 
 }
+.DIYImageText{
+    background-color: rgb(200, 0, 0) !important;
+}
+#contactLinksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .contactLinks{
     display: inline-block;
-    margin: 0.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
 }
 
 
