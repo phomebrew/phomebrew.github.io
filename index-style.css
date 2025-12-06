@@ -30,10 +30,12 @@ body{
     padding: 1vw 0vw 1vw 0vw;
 }
 #navBar a{
-    padding: .25vw 1.5vw .25vw 1.5vw;
+    display: inline-block;
+    padding: .25vw 0vw .25vw 0vw;
     margin: 0 10vw 0 10vw;
+    width: 12vw;
     opacity: .7;
-    font-size: 1.25vw;
+    font-size: 2.25vw;
     background-color: var(--navypurple);
     color: gray;
     border: .25vw solid gray;
