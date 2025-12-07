@@ -27,6 +27,24 @@ var discTexts = new Map([
             ["external", "https://phomebrew.github.io"],
             ["externalDisc", "Link To Project"]
         ])
+    ],
+    ["ida", 
+        new Map([
+            ["title","Sitting Ida"],
+            ["disc", "This is a 3D sculpture of Ida from one of my favorite game, Monument Valley! It's kind of like \"Elf on the Shelf\" except it's more of stargazing rather than looking at you. This didn't take as long, but I had to do some research on how to create a sphere shape head that looked smooth. I honestly like how the head came out <3 I did make another variation but this time embodying the crow character from the same game. The only difference is that the body is black, the \"hat\" is moved to the mouth area to give it a beak, and there's eyes attached to the sides to give it some more personality. \n (By the way Monument Valley is a really good game, I would definitely recommend if you like puzzle games!"]
+        ])
+    ],
+    ["christmas_tree", 
+        new Map([
+            ["title","Christmas Tree Stand"],
+            ["disc", "A mini platform with a well-decorated christmas tree and presents on the bottom. This was a pretty fun concept to design and try grounding my creations in their own little environment. The base is just cardboard warpped in printer paper to give it a nice snowy look while still being sturdy enough to support the wooden skewer that's used as the base of the tree. I think if I were to re-do or change something, I probably would have the doves be attached to the tree in a different way (maybe with skewers?) and make the star 3D. But, with that being said, I am proud of how this turned out!"]
+        ])
+    ],
+    ["boba_cup", 
+        new Map([
+            ["title","Boba Cup"],
+            ["disc", "A recreation of a boba cup with a storage area underneath the 18 flap. This was one of my first arts and crafts projects that I devoted lots of time into (like weeks), but I had lots of fun creating it! The longest part was the design proccess, especially figuring out how to get that distinct tapered cup look. My main difficulty was that the cup needed to be flat both on the top and bottom, but I couldn't just eyeball it without wasting lots of resources. So I created a formula to get the outline I wanted while still being able to adjust the dimensions and the slope of the sides."]
+        ])
     ]
 ])
 
